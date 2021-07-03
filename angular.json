@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "one-tap"
+  "defaultProject": "one-tap",
+  "cli": {
+    "analytics": "dc46525e-7adf-44f3-8b92-43d62eb5629d"
+  }
 }

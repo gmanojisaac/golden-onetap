@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebase/app';
+import * as firebaseapp from 'firebase/app';
 import { BehaviorSubject } from 'rxjs';
 declare var window: any;
 
@@ -34,7 +34,7 @@ export class AuthService {
   }
 
   handle(token): void {
-    const credential = auth.GoogleAuthProvider.credential(token.credential);
+    const credential = firebaseapp.auth.GoogleAuthProvider.credential(token.credential);
     this.fireAuth.signInWithCredential(credential);
   }
 

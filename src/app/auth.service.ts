@@ -21,6 +21,7 @@ export class AuthService {
       window.google.accounts.id.initialize({
         client_id: environment.client_id,
         callback: (token) => {
+          console.log(token);
           this.handle(token);
         }
       });

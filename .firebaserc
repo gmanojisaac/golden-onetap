@@ -6,6 +6,13 @@
           "okaylancer"
         ]
       }
+    },
+    "projectdevelopmenttool": {
+      "hosting": {
+        "one-tap": [
+          "projectdevelopmenttool"
+        ]
+      }
     }
   },
   "projects": {
